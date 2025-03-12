@@ -40,7 +40,7 @@ class RekeningBank {
 public class codelab2 {
     public static void main(String[] args) {
         // Membuat objek RekeningBank
-        RekeningBank rekening1 = new RekeningBank("070", "Excl;", 500000);
+        RekeningBank rekening1 = new RekeningBank("090", "Bran;", 500000);
         RekeningBank rekening2 = new RekeningBank("079", "Izqi", 1000000);
 
         // Menampilkan informasi rekening awal
