@@ -37,10 +37,10 @@ class RekeningBank {
 }
 
 // Kelas Main untuk menjalankan program
-public class codelab2 {
+public class Codelab2 {
     public static void main(String[] args) {
         // Membuat objek RekeningBank
-        RekeningBank rekening1 = new RekeningBank("090", "Bran;", 500000);
+        RekeningBank rekening1 = new RekeningBank("112", "Elvin;", 500000);
         RekeningBank rekening2 = new RekeningBank("079", "Izqi", 1000000);
 
         // Menampilkan informasi rekening awal

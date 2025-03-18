@@ -1,17 +1,14 @@
-// Kelas Hewan
 class Hewan {
     String nama;
     String jenis;
     String suara;
 
-    // Constructor
     Hewan(String nama, String jenis, String suara) {
         this.nama = nama;
         this.jenis = jenis;
         this.suara = suara;
     }
 
-    // Method untuk menampilkan informasi hewan
     void tampilkanInfo() {
         System.out.println("Nama: " + nama);
         System.out.println("Jenis: " + jenis);
@@ -20,14 +17,20 @@ class Hewan {
     }
 }
 
-// Kelas Main untuk menjalankan program
-public class codelab1 {
+public class Codelab1 {
     public static void main(String[] args) {
-        // Membuat objek Hewan
-        Hewan hewan1 = new Hewan("Kucing", "Mamalia", "Nyann~~");
-        Hewan hewan2 = new Hewan("Anjing", "Mamalia", "Woof-Woof!!");
 
-        // Memanggil method tampilkanInfo()
+        Hewan hewan1 = new Hewan();
+        Hewan hewan2 = new Hewan();
+
+        hewan1.nama = "Kucing";
+        hewan2.nama = "anjing";
+
+        hewan1.jenis = "mamalia";
+        hewan2.jenis = "mamalia";
+
+        hewan1.suara = ""
+
         hewan1.tampilkanInfo();
         hewan2.tampilkanInfo();
     }
