@@ -11,7 +11,7 @@ public class Main{
         System.out.print("Masukkan nama: ");
         nama = scanner.nextLine();
 
-        System.out.print("Masukkan kelamin (L/P): ");
+        System.out.print("kelamin (L/P): ");
         kelamin = scanner.next().charAt(0);
         String jenisKelamin;
         switch(kelamin) {
