@@ -4,7 +4,6 @@ class Karakter {
     private String nama;
     private int kesehatan;
 
-
     public Karakter(String nama, int kesehatan) {
         this.nama = nama;
         this.kesehatan = kesehatan;
@@ -33,11 +32,23 @@ class Hero extends Karakter {
     public Hero(String nama, int kesehatan) {
         super(nama, kesehatan);
     }
+
+    @Override
+    public void serang(Karakter target, int damage, String jenisSerangan) {
+        System.out.println(getNama() + " melakukan serangan heroik: " + jenisSerangan + "!");
+        super.serang(target, damage, jenisSerangan);
+    }
 }
 
 class Monster extends Karakter {
     public Monster(String nama, int kesehatan) {
         super(nama, kesehatan);
+    }
+
+    @Override
+    public void serang(Karakter target, int damage, String jenisSerangan) {
+        System.out.println(getNama() + " mengamuk dengan serangan: " + jenisSerangan + "!");
+        super.serang(target, damage, jenisSerangan);
     }
 }
 
@@ -46,7 +57,7 @@ public class Codelab1 {
         Scanner scanner = new Scanner(System.in);
 
         Hero Arthur = new Hero("Arthur", 5000);
-        Monster Dragon = new Monster("Dragon", 8000);
+        Monster Dragon = new Monster("Dragon", 6000);
 
         System.out.println("Pertarungan dimulai!\n");
         System.out.println(Arthur.getNama() + " vs " + Dragon.getNama());
@@ -85,7 +96,6 @@ public class Codelab1 {
 
             ronde++;
         }
-
 
         if (Arthur.getKesehatan() > 0) {
             System.out.println(Arthur.getNama() + " memenangkan pertarungan!");
