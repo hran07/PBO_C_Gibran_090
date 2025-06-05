@@ -1,4 +1,4 @@
-package Action;
+package Praktikum.Action;
 
 public interface MahasiswaAction {
 
